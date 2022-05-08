@@ -54,8 +54,7 @@ export default function Posts() {
             likesCount: '5674567'
         }
     ];
-
-    const qqcoisa = arrayPosts.map(postObj => <Post {...postObj} />)
+    
     return(
         <div>
             {arrayPosts.map(postObj => <Post {...postObj} />)}
