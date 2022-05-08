@@ -1,4 +1,17 @@
-
+function Suggestion(props) {
+    return(
+        <div class="Suggestions">
+            <div>
+                <a href={props.userProfile} target="_blank"><img src={props.userImage} /></a>
+                <div>
+                    <a href={props.userProfile} target="_blank"><h3>{props.userName}</h3></a>
+                    <div class="SuggestedUserStatus">Segue você</div>
+                </div>
+            </div>
+            <a href="https://findtheinvisiblecow.com/" target="_blank"><div class="FollowButton">Seguir</div></a>
+        </div>
+    );
+}
 
 export default function Aside() {
     return(
