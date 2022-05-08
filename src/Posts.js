@@ -1,166 +1,64 @@
+import Post from "./Post";
+const arrayPosts = [
+    {
+        userPage: "https://findtheinvisiblecow.com/",
+        userProfilePic: "./resources/UserThumbnails/meowed 1.png",
+        userName: "meowed",
+        postImage: "./resources/Content/WhatsApp Image 2022-03-28 at 17.39.35.jpeg",
+        followerProfile: "https://findtheinvisiblecow.com/",
+        followerPic: "./resources/UserThumbnails/respondeai 1.png",
+        followerName: "Respondeaí",
+        likesCount: '158000'
+    },
+    {
+        userPage: "https://findtheinvisiblecow.com/",
+        userProfilePic: "./resources/UserThumbnails/barked 1.png",
+        userName: "barked",
+        postImage: "./resources/Content/WhatsApp Image 2022-03-28 at 17.39.36.jpeg",
+        followerProfile: "https://findtheinvisiblecow.com/",
+        followerPic: "./resources/UserThumbnails/adorableanimals 1.png",
+        followerName: "adorable_animals",
+        likesCount: '1580080'
+    },
+    {
+        userPage: "https://findtheinvisiblecow.com/",
+        userProfilePic: "./resources/UserThumbnails/barked 1.png",
+        userName: "barked",
+        postImage: "./resources/Content/WhatsApp Image 2022-03-28 at 17.39.37.jpeg",
+        followerProfile: "https://findtheinvisiblecow.com/",
+        followerPic: "./resources/UserThumbnails/adorableanimals 1.png",
+        followerName: "Chimbinha",
+        likesCount: '10080'
+    },
+    {
+        userPage: "https://findtheinvisiblecow.com/",
+        userProfilePic: "./resources/UserThumbnails/smallcutecats 1.png",
+        userName: "barked",
+        postImage: "./resources/Content/WhatsApp Image 2022-03-28 at 17.39.39.jpeg",
+        followerProfile: "https://findtheinvisiblecow.com/",
+        followerPic: "./resources/UserThumbnails/filomoderna 1.png",
+        followerName: "Rogerinho do Ingá",
+        likesCount: '9080'
+    },
+    {
+        userPage: "https://findtheinvisiblecow.com/",
+        userProfilePic: "./resources/UserThumbnails/chibirdart 1.png",
+        userName: "barked",
+        postImage: "./resources/Content/WhatsApp Image 2022-03-28 at 17.39.39 (1).jpeg",
+        followerProfile: "https://findtheinvisiblecow.com/",
+        followerPic: "./resources/UserThumbnails/filomoderna 1.png",
+        followerName: "tião",
+        likesCount: '5674567'
+    }
+];
 export default function Posts() {
     return(
         <div>
-        <article>
-            <div class="PostTopBar">
-                <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <img src="./resources/UserThumbnails/meowed 1.png" />
-                        <h3>meowed</h3>
-                    </a>
-                </div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-            </div>
-            <img src="./resources/Content/WhatsApp Image 2022-03-28 at 17.39.35.jpeg" alt="" />        
-            <div>
-                <nav class="PostBottomIcons">
-                    <div>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                    </div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
-                </nav>
-                <div class="PostStats">
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/respondeai 1.png" /></a>
-                    <h4>Curtido por <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>respondeai</strong></a> e <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>outras 101.523 pessoas</strong></a></h4>
-                </div>
-            </div>
-        </article>
-        <article>
-            <div class="PostTopBar">
-                <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <img src="./resources/UserThumbnails/barked 1.png" />
-                        <h3>barked</h3>
-                    </a>
-                </div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-            </div>
-            <img src="./resources/Content/WhatsApp Image 2022-03-28 at 17.39.36.jpeg" alt="" />        
-            <div>
-                <nav class="PostBottomIcons">
-                    <div>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                    </div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
-                </nav>
-                <div class="PostStats">
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/adorableanimals 1.png" /></a>
-                    <h4>Curtido por <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>adorable_animals</strong></a> e <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>outras 99.159 pessoas</strong></a></h4>
-                </div>
-            </div>
-        </article> 
-        <article>
-            <div class="PostTopBar">
-                <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <img src="./resources/UserThumbnails/meowed 1.png" />
-                        <h3>meowed</h3>
-                    </a>
-                </div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-            </div>
-            <img src="./resources/Content/WhatsApp Image 2022-03-28 at 17.39.37.jpeg" alt="" />        
-            <div>
-                <nav class="PostBottomIcons">
-                    <div>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                    </div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
-                </nav>
-                <div class="PostStats">
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/respondeai 1.png" /></a>
-                    <h4>Curtido por <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>respondeai</strong></a> e <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>outras 101.523 pessoas</strong></a></h4>
-                </div>
-            </div>
-        </article>  
-        <article>
-            <div class="PostTopBar">
-                <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <img src="./resources/UserThumbnails/smallcutecats 1.png" />
-                        <h3>smallcutecats</h3>
-                    </a>
-                </div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-            </div>
-            <video autoPlay muted>
-                <source src="./resources/Videos/video.mp4" type="video/mp4" />
-                <source src="./resources/Videos/video.ogv" type="video/ogg" />
-                Seu navegador não Suporta Tags de Vídeo!
-            </video>     
-            <div>
-                <nav class="PostBottomIcons">
-                    <div>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                    </div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
-                </nav>
-                <div class="PostStats">
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/filomoderna 1.png" /></a>
-                    <h4>Curtido por <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>Chimbinha</strong></a> e <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>outras 8.140 pessoas</strong></a></h4>
-                </div>
-            </div>
-        </article>
-        <article>
-            <div class="PostTopBar">
-                <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <img src="./resources/UserThumbnails/chibirdart 1.png" />
-                        <h3>chibirdart</h3>
-                    </a>
-                </div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-            </div>
-            <img src="./resources/Content/WhatsApp Image 2022-03-28 at 17.39.39.jpeg" alt="" />        
-            <div>
-                <nav class="PostBottomIcons">
-                    <div>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                    </div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
-                </nav>
-                <div class="PostStats">
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/respondeai 1.png" /></a>
-                    <h4>Curtido por <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>respondeai</strong></a> e <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>outras 99.823 pessoas</strong></a></h4>
-                </div>
-            </div>
-        </article>
-        <article>
-            <div class="PostTopBar">
-                <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <img src="./resources/UserThumbnails/chibirdart 1.png" />
-                        <h3>chibirdart</h3>
-                    </a>
-                </div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
-            </div>
-            <img src="./resources/Content/WhatsApp Image 2022-03-28 at 17.39.43.jpeg" alt="" />        
-            <div>
-                <nav class="PostBottomIcons">
-                    <div>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                    </div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
-                </nav>
-                <div class="PostStats">
-                    <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/respondeai 1.png" /></a>
-                    <h4>Curtido por <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>respondeai</strong></a> e <a href="https://findtheinvisiblecow.com/" target="_blank"><strong>outras 99.823 pessoas</strong></a></h4>
-                </div>
-            </div>
-        </article>
+        <Post {...arrayPosts[0]} />
+        <Post {...arrayPosts[1]} />
+        <Post {...arrayPosts[2]} /> 
+        <Post {...arrayPosts[3]} /> 
+        <Post {...arrayPosts[4]} /> 
         </div>
     );
 }
