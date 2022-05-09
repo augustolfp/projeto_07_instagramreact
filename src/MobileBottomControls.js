@@ -1,11 +1,13 @@
+import IonButton from "./IonButton";
+
 export default function MobileBottomControls() {
     return(
         <nav class="MobileBottomControls">
-        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="home"></ion-icon></a>
-        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="search-outline"></ion-icon></a>
-        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="add-circle-outline"></ion-icon></a>
-        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="person-outline"></ion-icon></a>
-    </nav>
+            <IonButton link="https://findtheinvisiblecow.com/" icon="home" />
+            <IonButton link="https://findtheinvisiblecow.com/" icon="search-outline" />
+            <IonButton link="https://findtheinvisiblecow.com/" icon="add-circle-outline" />
+            <IonButton link="https://findtheinvisiblecow.com/" icon="heart-outline" />
+            <IonButton link="https://findtheinvisiblecow.com/" icon="person-outline" />
+        </nav>
     );
 }
