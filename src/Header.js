@@ -1,6 +1,11 @@
-export default function Header() {
+function IonButton(props) {
     return(
-        <header>
+        <a href={props.link} target="_blank"><ion-icon name={props.icon}></ion-icon></a>
+    );
+}
+
+function DesktopHeader() {
+    return(
         <div class="DesktopHeader">
             <a href="https://www.youtube.com" target="_blank" class="PageLogo">
                 <ion-icon name="logo-instagram"></ion-icon>
@@ -11,17 +16,30 @@ export default function Header() {
                 <p>Pesquisar</p>
             </div>  
             <nav>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="compass-outline"></ion-icon></a>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="person-outline"></ion-icon></a>
+                <IonButton link="https://findtheinvisiblecow.com/" icon="navigate-outline"/>
+                <IonButton link="https://findtheinvisiblecow.com/" icon="compass-outline"/>
+                <IonButton link="https://findtheinvisiblecow.com/" icon="heart-outline"/>
+                <IonButton link="https://findtheinvisiblecow.com/" icon="person-outline"/>
             </nav>
         </div>
+    );
+}
+
+function MobileHeader() {
+    return(
         <div class="MobileHeader">
-            <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <IonButton link="https://findtheinvisiblecow.com/" icon="logo-instagram" />
             <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/images/logo.png" /></a>
-            <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
+            <IonButton link="https://findtheinvisiblecow.com/" icon="navigate-outline"/>
         </div>
-    </header>
+    );
+}
+
+export default function Header() {
+    return(
+        <header>
+            <DesktopHeader />
+            <MobileHeader />
+        </header>
     );
 }

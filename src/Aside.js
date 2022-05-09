@@ -13,15 +13,15 @@ function Suggestion(props) {
     );
 }
 
-function MyUser() {
+function MyUser(props) {
     return(
         <div class="MyUser">
             <div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><img src="./resources/UserThumbnails/catanacomics 1.png" /></a>
+                <a href={props.userProfile} target="_blank"><img src={props.userImage} /></a>
                 <div>
-                    <a href="https://findtheinvisiblecow.com/" target="_blank">
-                        <h3>catanacomics</h3>
-                        <h5>Catana</h5>
+                    <a href={props.userProfile} target="_blank">
+                        <h3>{props.userName}</h3>
+                        <h5>{props.userLegalName}</h5>
                     </a>
                 </div>
             </div>
@@ -29,7 +29,39 @@ function MyUser() {
     );
 }
 
+function Footer() {
+    return(
+        <div>
+            <div>
+                <a href="https://findtheinvisiblecow.com/" target="_blank">
+                    <footer>
+                        Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+                    </footer>
+                </a>
+                <a href="https://findtheinvisiblecow.com/" target="_blank"><footer>© 2021 INSTAGRAM DO FACEBOOK</footer></a>
+            </div>
+        </div>
+    );
+}
+
+function SuggestionHeader() {
+    return(
+        <div>
+            <div id="SugestoesParaVoceText">Sugestões para você</div>
+            <a href="https://findtheinvisiblecow.com/" target="_blank"><div id="VerTudoButton">Ver tudo</div></a>
+        </div>
+    );
+}
+
 export default function Aside() {
+
+    const userData = {
+        userName: "augustolfp",
+        userLegalName: "Augusto",
+        userProfile: "https://findtheinvisiblecow.com/",
+        userImage: "./resources/UserThumbnails/catanacomics 1.png"
+    };
+
     const suggestionArray = [
         {
             userProfile: "https://findtheinvisiblecow.com/",
@@ -60,18 +92,10 @@ export default function Aside() {
 
     return(
         <aside>
-            <MyUser />
-            <div>
-                <div id="SugestoesParaVoceText">Sugestões para você</div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><div id="VerTudoButton">Ver tudo</div></a>
-            </div>
+            <MyUser {...userData} />
+            <SuggestionHeader />
             {suggestionArray.map(suggestionObj => <Suggestion {...suggestionObj} />)}
-            <a href="https://findtheinvisiblecow.com/" target="_blank">
-                <footer>
-                    Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-                </footer>
-            </a>
-            <a href="https://findtheinvisiblecow.com/" target="_blank"><footer>© 2021 INSTAGRAM DO FACEBOOK</footer></a>
+            <Footer />
         </aside>
     );
 }
