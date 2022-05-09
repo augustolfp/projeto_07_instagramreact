@@ -1,3 +1,5 @@
+import IonButton from "./IonButton";
+
 function PostTopBar(props) {
     return(
         <div class="PostTopBar">
@@ -7,7 +9,7 @@ function PostTopBar(props) {
                 <h3>{props.userName}</h3>
             </a>
         </div>
-        <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+        <IonButton link="https://findtheinvisiblecow.com/" icon="ellipsis-horizontal" />
     </div>
     );
 }
@@ -16,11 +18,11 @@ function PostBottomIcons() {
     return(
         <nav class="PostBottomIcons">
             <div>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="heart-outline"></ion-icon></a>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="chatbubble-outline"></ion-icon></a>
-                <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="navigate-outline"></ion-icon></a>
+                <IonButton link="https://findtheinvisiblecow.com/" icon="heart-outline" />
+                <IonButton link="https://findtheinvisiblecow.com/" icon="chatbubble-outline" />
+                <IonButton link="https://findtheinvisiblecow.com/" icon="navigate-outline" />
             </div>
-            <a href="https://findtheinvisiblecow.com/" target="_blank"><ion-icon name="bookmark-outline"></ion-icon></a>
+            <IonButton link="https://findtheinvisiblecow.com/" icon="bookmark-outline" />
         </nav>
     );
 }
